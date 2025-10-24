@@ -225,8 +225,8 @@ async def monitor_devin_session_async(
                     elif msg_type == "user_message":
                         username = msg.get("username", "User")
                         console.print(f"\n[bold blue]👤 {username}:[/bold blue]")
-                        if len(content) > 400:
-                            console.print(content[:400] + "...")
+                        if len(content) > 4000:
+                            console.print(content[:4000] + "...")
                         else:
                             console.print(content)
         
@@ -794,7 +794,7 @@ async def _session_status_async(ctx, session_id: str):
                 timestamp = msg.get("timestamp", "")
                 content = msg.get("message", "")
                 console.print(f"\n[cyan]{msg_type}[/cyan] at {timestamp}:")
-                console.print(content[:500] + ("..." if len(content) > 500 else ""))
+                console.print(content[:4000] + ("..." if len(content) > 4000 else ""))
         
     except Exception as e:
         console.print(f"[red]Error: {str(e)}[/red]")

@@ -213,6 +213,7 @@ github-devin --repo owner/repo session-status devin-123
 ### Batch Analyze Issues
 
 Analyze multiple issues concurrently.
+Limitation: Long output is truncated. You cannot see sometimes confidence score.
 
 ```bash
 # Analyze specific issues
