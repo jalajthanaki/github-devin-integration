@@ -167,8 +167,6 @@ github-devin --repo owner/repo list-issues --label bug --limit 100
 # By assignee
 github-devin --repo owner/repo list-issues --assignee username --limit 100
 
-# By milestone
-github-devin --repo owner/repo list-issues --milestone "v1.0" --limit 100
 ```
 
 ### Analyze an Issue
@@ -210,8 +208,6 @@ Check the status of an existing Devin session.
 # Basic status check
 github-devin --repo owner/repo session-status devin-123
 
-# Get detailed output
-github-devin --repo owner/repo session-status devin-123 --verbose
 ```
 
 ### Batch Analyze Issues
@@ -221,9 +217,6 @@ Analyze multiple issues concurrently.
 ```bash
 # Analyze specific issues
 github-devin --repo owner/repo batch-analyze 42 13 7
-
-# Analyze range of issues
-github-devin --repo owner/repo batch-analyze 1..10
 ```
 
 ## Development
