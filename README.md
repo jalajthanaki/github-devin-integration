@@ -63,6 +63,10 @@ A powerful CLI tool to integrate with GitHub repositories and interact with Devi
 ### Install from PyPI
 
 ```bash
+# Install from PyPI (testpypi)
+pip install -i https://test.pypi.org/simple/ github-devin-integration==0.1.0
+
+# Install from PyPI (pypi) - TODO - Yet to commit on the pypi
 pip install github-devin-integration
 ```
 
