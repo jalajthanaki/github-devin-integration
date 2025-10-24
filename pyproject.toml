@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "github-devin-integration"
+version = "0.1.0"
+description = "CLI tool integrating GitHub Issues with Devin API"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "click",
+    "python-dotenv",
+    "rich",
+    "aiohttp",
+    "pygithub",
+]
+
+[project.scripts]
+github-devin = "github_devin_integration.cli:cli"
