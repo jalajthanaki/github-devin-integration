@@ -64,10 +64,11 @@ A powerful CLI tool to integrate with GitHub repositories and interact with Devi
 
 ```bash
 # Install from PyPI (testpypi)
-pip install -i https://test.pypi.org/simple/ github-devin-integration==0.1.0
+pip install -i https://test.pypi.org/simple/ github-devin-integration==0.1.1
+pip install -i https://test.pypi.org/simple/ github-devin-integration==0.1.0 
 
 # Install from PyPI (pypi) - TODO - Yet to commit on the pypi
-pip install github-devin-integration
+- [ ] pip install github-devin-integration
 ```
 
 ## Setup & Configuration
@@ -218,6 +219,9 @@ Limitation: Long output is truncated. You cannot see sometimes confidence score.
 ```bash
 # Analyze specific issues
 github-devin --repo owner/repo batch-analyze 42 13 7
+
+# Monitor analysis progress
+github-devin --repo jalajthanaki/NLPython session-status devin-123
 ```
 
 ## Development
